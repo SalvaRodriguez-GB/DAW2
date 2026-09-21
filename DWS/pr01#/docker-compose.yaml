@@ -1,0 +1,7 @@
+services:
+  web:
+    image: php:8.4-apache
+    ports:
+      -  "8002:80"
+    volumes:
+      -  ./src:/var/www/html
