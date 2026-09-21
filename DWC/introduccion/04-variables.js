@@ -14,4 +14,3 @@ console.log(PI);
 // Error
 helloWorld3 = "HOLA de nuevo, Javascript 2"
 
-console.log(typeof helloWorld3);

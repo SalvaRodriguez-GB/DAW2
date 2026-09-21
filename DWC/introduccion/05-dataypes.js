@@ -33,3 +33,14 @@ console.log(bigInt2);
 // Symbol
 let simbolo = Symbol("simbolo");
 console.log(simbolo);
+
+//Mostrando los tipos de datos con typeof
+console.log(typeof cadena);
+console.log(typeof numero);
+console.log(typeof esVerdadero);
+console.log(typeof indefinido);
+console.log(typeof nulo);
+console.log(typeof bigInt);
+console.log(typeof simbolo);    
+
+
