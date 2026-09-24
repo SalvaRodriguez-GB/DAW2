@@ -50,5 +50,25 @@ console.log(a != b); // Desigualdad
 console.log(a === b); // Igualdad estricta
 console.log(a !== b); // Desigualdad estricta
 
+//Truthly values
+
+/*
+- Todos los números positivos y negativos menos el 0
+-Todas las cadenas de texto menos las vacías
+-El boolean true
+-El objeto vacío {}
+-El arreglo vacío []
+
+Falsy values
+-0
+-0n
+-null
+-undefined
+-false
+-""
+
+
+
+*/
 
 

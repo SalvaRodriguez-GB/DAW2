@@ -1,0 +1,60 @@
+// 1. Imprime por consola tu nombre si una variable toma su valor
+
+let nombre = "Salva";
+let nombre2 = "Salva"
+if (nombre == nombre2) {
+  console.log("Si es tu nombre");
+} else {
+    console.log("No es tu nombre")
+}
+
+
+// 2. Imprime por consola un mensaje si el usuario y contraseña coincide con unos establecidos
+
+const userKey = "123456789"
+const userName = "Salva"
+
+let passwordTry = 123456789
+let userTry = "Salva"
+
+if (userKey == passwordTry && userName == userTry) {
+    console.log("Inicio de sesión exitoso")
+
+} else {
+    console.log("Problema en los credenciales brother!")
+}
+
+// 3. Verifica si un número es positivo, negativo o cero e imprime un mensaje
+
+let anyNumber = -1
+
+switch (true) {
+    case anyNumber == 0: {
+        console.log("Es 0")
+        break;
+    }
+    case anyNumber > 0: {
+        console.log("Es positivo")
+        break;
+    }
+    case anyNumber < 0: {
+        console.log("Es negativo")
+        break;
+    }
+
+    default: {
+        console.log("Eso no es un número, perro")
+    }
+}
+
+// 4. Verifica si una persona puede votar o no e indica cuantos años le faltan
+
+let edad;
+
+if (edad < 18) {
+    console.log("No puede votar, le faltan" + 18 - edad)
+} else {
+    console.log("Puede votar desde hace" + edad - 18 + "años")
+}
+
+
