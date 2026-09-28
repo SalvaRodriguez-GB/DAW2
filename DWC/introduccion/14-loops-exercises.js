@@ -71,5 +71,33 @@ for (let i = cadena.length - 1; i >= 0; i--) {
 console.log(cadenaNueva)
 
 // 9. Usa un bucle para generar los primeros 10 números de la secuencia de Fibonacci
+//0, 1, 1, 2, 3, 5, 8, 13, 21 y 34
+function fibonacci(cantidad) {
+    let sucesion = [0, 1];
+    for (let i = 1; i <= cantidad - 2; i++) {
+
+        sucesion.push(sucesion[i] + sucesion[i - 1])
+
+    }
+    console.log(sucesion)
+}
+
+fibonacci(10)
 
 // 10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solos los mayores a 10
+
+let arrayNumerico = [12, 1, 3, 14, 20, 4, 5, 69]
+
+function genArray(array) {
+    let i = 0;
+    let newArray = [];
+
+    while (i < array.length) {
+        if (array[i] > 10)
+            newArray.push(array[i]);
+        i++;
+    }
+    return newArray;
+}
+let arrayGen = genArray(arrayNumerico);
+console.log(arrayGen)
