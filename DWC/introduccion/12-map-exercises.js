@@ -60,6 +60,27 @@ let meses = new Map([
 
 // 8. Comprueba si el mes número 5 existe en el map e imprime su valor
 
+for (let [mes,numero] of meses) {
+    if (numero == 5) {
+        console.log("Sí está, es el mes, es el mes " + numero )
+    } else {
+        console.log("No está")
+    }
+}
+
 // 9. Añade al mapa una clave con un array que almacene los meses de verano
 
+
+
 // 10. Crea un Array, transfórmalo a un Set y almacénalo en un Map
+
+let ejemploArray = [1,2,3]
+
+let ejemploSet = new Set(ejemploArray)
+
+let ejemploMap = new Map([
+    [1,ejemploSet]
+])
+
+console.log(ejemploSet)
+console.log(ejemploMap)
