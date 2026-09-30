@@ -84,3 +84,13 @@ const myArray = [1, 2, 3, 4]
 myArray.forEach(function (value) {
     console.log(value)
 })
+
+myArray.forEach(value => console.log(value))
+
+let conjunto = new Set()
+
+conjunto.add(12).add(123123).add(1224).add(123)
+
+conjunto.forEach(function(elemento) {
+    console.log(`Elemento: ${elemento}`)
+})

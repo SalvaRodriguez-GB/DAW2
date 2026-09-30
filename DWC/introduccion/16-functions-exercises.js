@@ -23,6 +23,19 @@ let array = [123, 12, 34]
 
 console.log(mayor(array))
 
+function mayor1(array) {
+    let mayor = array[0]
+    for (let i of array) {
+        if (i > mayor) {
+            mayor = i;
+        }
+    } return mayor;
+}
+
+let ejemplo = [1, 2, 3, 4, 5]
+console.log("AQUIIIIII")
+console.log(mayor1(ejemplo))
+
 
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
 
@@ -57,8 +70,9 @@ console.log(mayuscula(strings))
 // 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
 
 function esPrimo(numero) {
+    let cuadrado = Math.sqrt(numero)
+    for (let i = 2; i <= cuadrado; i++) {
 
-    for (let i = 2; i < numero; i++) {
         if (numero % i == 0) {
             return false
         }
@@ -79,6 +93,7 @@ function comunes(array1, array2) {
             newArray.push(array1[i]);
         }
     }
+
     if (!newArray) {
         console.log("No coincide ni uno, Hulio");
     } else {
