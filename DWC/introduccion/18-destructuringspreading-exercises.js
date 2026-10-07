@@ -81,4 +81,4 @@ console.log(copyObject)
 
 // 10. Combina desestructuración y propagación
 
-let {name:name4,...personAnidada} = person
+let {name:name4,...personRandom} = person
