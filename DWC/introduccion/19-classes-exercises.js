@@ -1,10 +1,10 @@
 // 1. Crea una clase que reciba dos propiedades
 
 class Person {
-    constructor(name, age, alias) {
+    constructor(name, age, alias = "Sin Alias") {
         this.name = name;
         this.age = age;
-        
+
     }
 }
 
@@ -14,7 +14,7 @@ class Person2 {
     constructor(name, age) {
         this.name = name;
         this.age = age;
-        
+
     }
     greeting() {
         console.log(`Hola ${this.name}, tienes ${this.age} años`)
@@ -23,8 +23,8 @@ class Person2 {
 
 // 3. Muestra los valores de las propiedades e invoca a la funcion
 
-let persona = new Person2("salva",34)
+let persona = new Person2("salva", 34)
 
 persona.greeting()
 
-console.log(persona.name,persona.age)
+console.log(persona.name, persona.age)

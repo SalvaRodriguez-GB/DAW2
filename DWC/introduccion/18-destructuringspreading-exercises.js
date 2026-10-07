@@ -69,16 +69,18 @@ console.log(newArray)
 console.log(newArray == spreadedArray)
 
 // 8. Usa propagación para combinar dos objetos en uno nuevo
-let newObject = {...person,...personAnidada}
+let newObject = { ...person, ...personAnidada }
 console.log(newObject)
 
 
 
 // 9. Usa propagación para crear una copia de un objeto
 
-let copyObject = {...newObject}
+let copyObject = { ...newObject }
 console.log(copyObject)
 
 // 10. Combina desestructuración y propagación
 
-let {name:name4,...personRandom} = person
+let { name: name4, ...personRandom } = person
+
+console.log(name4,personRandom)

@@ -94,3 +94,6 @@ conjunto.add(12).add(123123).add(1224).add(123)
 conjunto.forEach(function(elemento) {
     console.log(`Elemento: ${elemento}`)
 })
+
+
+
