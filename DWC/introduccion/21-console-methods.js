@@ -52,18 +52,18 @@ console.info("Este es un mensaje de informaciÃ³n adicional")
 
 
 let data = [
-    ["1DAW", 20]
+    ["1DAW", 20],
     ["2DAW", 70]
 ]
 
 console.table(data)
 
 data = [
-    { clase: "1DAW", alumnos: 20},
-    { clase: "2DAW", alumnos: 7}
+    { clase: "1DAW", alumnos: 20 },
+    { clase: "2DAW", alumnos: 7 }
 ]
 
-console.table(data)
+console.table(data);
 
 
 
@@ -92,13 +92,13 @@ console.groupEnd()
 
 console.time("Tiempo de ejecuciÃ³n 1")
 
-for (let i=0; i< 1000000000; i++){
+for (let i = 0; i < 1000000000; i++) {
 
 }
 console.timeEnd("Tiempo de ejecuciÃ³n 1")
 
 console.time("Tiempo de ejecuciÃ³n 2")
-for (let i=0; i< 1000000000; i++){
+for (let i = 0; i < 1000000000; i++) {
 
 }
 
@@ -129,19 +129,19 @@ Uso principal: Se utiliza durante la etapa de desarrollo y depuraciÃ³n para co
 
 let age = 18
 
-console.assert(age >=18, "El usuario debe ser mayor de edad")
+console.assert(age >= 18, "El usuario debe ser mayor de edad")
 
 // count
 
 
 console.count("Click")
-console.count("Click")
+console.count("Clic")
 console.count("Click")
 console.count("Click")
 console.countReset("Click")
 console.count("Click")
 
-for (let i=0; i< 10; i++){
+for (let i = 0; i < 10; i++) {
     console.count("Click")
 }
 console.countReset("Click")
@@ -152,16 +152,16 @@ console.countReset("Click")
 // Muestra una traza de la pila de llamadas (stack trace).
 // Revela la ruta exacta de funciones por las que ha pasado el programa
 
-function funcA(){
+function funcA() {
     funcB()
 }
 
 
-function funcB(){
+function funcB() {
     funcC()
 }
 
-function funcC(){
+function funcC() {
     console.trace("Seguimos la ejecuciÃ³n")
 }
 
