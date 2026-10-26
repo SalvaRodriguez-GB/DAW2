@@ -1,17 +1,37 @@
-// Crea una función que le entre como parámetro un string y devuelva el número de vocales
+// Crear una potencia con recursividad
 
 
-const vocales = function cuantasVocales(string) {
-    let nVocales = ["a", "e", "i", "o", "u"];
-    let contador = 0;
-    for (let i = 0; i < string.length; i++) {
-        if (nVocales.includes(string[i])) {
-            contador++;
-        }
+
+console.time("Start")
+function potencia(n, elevado) {
+    if (elevado === 0) {
+        return 1;
     }
-    return contador;
+
+    return n * potencia(n, elevado - 1);
 }
 
-let texto = "hola que tal"
+console.log(potencia(2, 10));
 
-console.log(vocales(texto));
+console.timeEnd("Start")
+
+
+// Sumar elementos de un array
+
+const arr = [1, 2, 3, 4];
+
+function sumarArray(array) {
+    if (arr.length <= 0) {
+        return 0;
+    }
+    
+    return arr.pop() + sumarArray(arr)
+    
+}
+
+console.log(sumarArray(arr))
+
+
+//Invertir una cadena de texto
+
+// 
