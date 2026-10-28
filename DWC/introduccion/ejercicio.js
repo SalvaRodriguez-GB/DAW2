@@ -24,14 +24,15 @@ function sumarArray(array) {
     if (arr.length <= 0) {
         return 0;
     }
-    
+
     return arr.pop() + sumarArray(arr)
-    
+
 }
 
 console.log(sumarArray(arr))
 
 
 //Invertir una cadena de texto
+
 
 // 
